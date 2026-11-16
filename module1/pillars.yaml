@@ -12,52 +12,52 @@
 pillars:
   - name: identity
     block: governance
-    owner: TODO
+    owner: governance
     artifact: spiffe-ids.yaml
 
   - name: agent-security
     block: governance
-    owner: TODO
+    owner: governance
     artifact: permission-tiers.yaml
 
   - name: agent-observability
     block: governance
-    owner: TODO
+    owner: governance
     artifact: otel-collector.yaml
 
   - name: capability
     block: harness
-    owner: TODO
+    owner: harness 
     artifact: tool-registry.yaml
 
   - name: context
     block: harness
-    owner: TODO
+    owner: harness 
     artifact: rag-config.toml
 
   - name: execution
     block: harness
-    owner: TODO
+    owner: harness 
     artifact: orchestrator.yaml
 
   - name: evaluation
     block: harness
-    owner: TODO
+    owner: harness 
     artifact: gates.yaml
 
   - name: providers
     block: models
-    owner: TODO
+    owner: models
     artifact: providers.yaml
 
   - name: inference-endpoints
     block: models
-    owner: TODO
+    owner: models
     artifact: model-routes.toml
 
   - name: model-hosting
     block: models
-    owner: TODO
+    owner: models
     artifact: providers.yaml
 
 # Module 1, Task 3.
@@ -68,14 +68,14 @@ pillars:
 # Use exactly: platform | path-owner
 parameters:
   - name: identity scope
-    authority: TODO
+    authority: platform 
   - name: which entitled tools this path uses
-    authority: TODO
+    authority: path-owner
   - name: policy tier map
-    authority: TODO
+    authority: platform 
   - name: iteration ceiling
-    authority: TODO
+    authority: path-owner
   - name: cost cap
-    authority: TODO
+    authority: platform 
   - name: definition of done
-    authority: TODO
+    authority: path-owner
