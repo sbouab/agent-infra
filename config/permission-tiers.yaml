@@ -12,6 +12,7 @@ tiers:
     - ci:read
     - adr:search
     - ledger:read
+    - telemetry:query
 
   moderate:
     - scm:comment

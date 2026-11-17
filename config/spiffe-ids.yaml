@@ -13,6 +13,7 @@ workloads:
       - scm:read
       - scm:comment
       - adr:search
+      - telemetry:query
 
 # Humans an agent can act for. An agent acting for a person gets no more than
 # that person holds, so the issued entitlement set is intersected with theirs.

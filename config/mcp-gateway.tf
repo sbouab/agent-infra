@@ -16,6 +16,7 @@ locals {
   enabled_servers = [
     "github",
     "knowledge-base",
+    "prometheus"
   ]
 
   rate_limit_per_minute = 30

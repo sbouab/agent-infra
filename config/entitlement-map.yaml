@@ -10,6 +10,7 @@ grants:
       - scm:read
       - scm:comment
       - adr:search
+      - telemetry:query
 
   - path: /validate-change
     operations:
