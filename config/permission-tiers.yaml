@@ -41,6 +41,7 @@ injection_patterns:
   - "you are now (a|an) [a-z ]*"
   - "reveal (your )?(system )?prompt"
   - "print (the )?(env|environment|secrets)"
+  - "merge (without|without running) (gates|checks)"
 
 # Check 3: output and destination. Half of this exists in an IDP already,
 # as secret scanning and per-zone egress rules. What changes is that scanning
@@ -55,4 +56,3 @@ egress_allowlist:
   - github.acme.internal
   - argocd.acme.internal
   - prometheus.acme.internal
-  - gist.github.com

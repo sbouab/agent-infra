@@ -15,6 +15,15 @@ workloads:
       - adr:search
       - telemetry:query
 
+  - name: validate-change
+    path: /validate-change
+    ttl_seconds: 3600
+    entitlements:
+      - scm:read
+      - scm:comment
+      - adr:search
+      - ci:trigger
+
 # Humans an agent can act for. An agent acting for a person gets no more than
 # that person holds, so the issued entitlement set is intersected with theirs.
 humans:
