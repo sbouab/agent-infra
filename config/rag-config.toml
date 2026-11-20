@@ -45,7 +45,7 @@ retrieval = "file"
 path = "sample_app"
 
 [paths."/pr-review"]
-sources = ["diff"]
+sources = ["diff", "adrs", "ticket"]
 
 [paths."/validate-change"]
 sources = ["diff"]

@@ -1,0 +1,12 @@
+# A data contract carries schema, quality rules, semantic definitions, an SLA
+# and an owner. It is a gating prerequisite for agentic work: a source without
+# one is not assembled.
+source: ticket
+certified: true
+owner: support-ops
+schema: markdown-ticket
+semantics: Ticket creation
+quality_rules:
+  - ticket assigned to a team member
+  - ticket attached to a sprint
+sla: ticket created within 24 hours of request, reviewed within 7 days of creation
