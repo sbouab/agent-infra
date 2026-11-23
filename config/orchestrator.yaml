@@ -4,9 +4,9 @@
 # null so the loop runs unbounded, then you add them.
 
 bounds:
-  iteration_cap: null       # the loop has run enough times
-  stall_window: null        # no measurable progress across N iterations
-  cost_budget_usd: null     # tokens or dollars spent
+  iteration_cap: 10       # the loop has run enough times
+  stall_window: 5        # no measurable progress across N iterations
+  cost_budget_usd: 100     # tokens or dollars spent
 
 checkpoint_every: 1
 

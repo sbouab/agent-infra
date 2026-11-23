@@ -13,7 +13,7 @@ fallback_on_error = "small"
 tokens_per_run = 40000
 
 [by_path."/pr-review"]
-model = "large"
+model = "small"
 
 [by_path."/validate-change"]
-model = "large"
+model = "local-70b"
